@@ -8,7 +8,7 @@ const categories = [
   { key: 'arte', label: 'Arte' },
 ];
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://parcial2-back-jet.vercel.app/api';
 
 export default function Home() {
   const [category, setCategory] = useState(null);
