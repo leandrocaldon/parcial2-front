@@ -34,6 +34,8 @@ export default function Home() {
     try {
       const res = await fetch(`${API_URL}/question`, {
         method: 'POST',
+        mode: 'cors',  
+        credentials: 'omit',  
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ category: cat }),
       });
